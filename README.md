@@ -23,3 +23,7 @@ To show data from back end to front end. This can be achinevd using context.
 It is schema of database. 
 python manage.py makemigrations
 python manage.py migrate
+
+# 7. Django Shell
+python manage.py shell
+object= model manager
