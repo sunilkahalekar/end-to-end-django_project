@@ -27,3 +27,7 @@ python manage.py migrate
 # 7. Django Shell
 python manage.py shell
 object= model manager
+
+# 8. Advanced CRUD operation in Django
+CRUD-> create, Read, Update, Delete
+
