@@ -14,7 +14,7 @@ def receipes(request):
             receipe_description=receipe_description,
             receipe_image=receipe_image,
         )
-        return redirect('/receipes/')
+        return redirect('/receipes')
         print(receipe_name)
         print(receipe_description)
         print(receipe_image)
