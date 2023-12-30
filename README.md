@@ -15,3 +15,6 @@ python manage.py runserver 0.0.0.0:5000
 
 # 4. Explaining Views And URLs in Django
 Write function in views and imcludes in URLS.
+
+# 5. Complete Template engines
+To show data from back end to front end. This can be achinevd using context.

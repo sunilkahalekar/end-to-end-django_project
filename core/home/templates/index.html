@@ -1,11 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django Tutorial</title>
-</head>
-<body>
-    <h1> This is basic page</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block start %}
+    <h1> This is index page </h1>
+    {{peoples}}
+
+    <table style="width:80%" class="container">
+        <tr>
+          <th>Sr. No</th>
+          <th>Name</th> 
+          <th>Age</th>
+          <th>Can vote</th>
+        </tr>
+        {% for people in peoples%}
+        <tr>
+          <td>{{forloop.counter}}</td>
+          <td>{{people.name}}</td>
+          <td>{{people.age}}</td>
+          
+          "<td>
+            {% if people.age >= "18" %}
+            👍
+            {% else %}
+            👎
+            {% endif %}
+          </td>"
+        </tr>
+       {% endfor %}
+      
+      </table>
+{% endblock %}
