@@ -18,3 +18,8 @@ Write function in views and imcludes in URLS.
 
 # 5. Complete Template engines
 To show data from back end to front end. This can be achinevd using context.
+
+# 6. Models and Migrations
+It is schema of database. 
+python manage.py makemigrations
+python manage.py migrate
