@@ -18,4 +18,7 @@ def receipes(request):
         print(receipe_name)
         print(receipe_description)
         print(receipe_image)
-    return render(request,'receips.html')
+
+    queryset= Receipe.objects.all()
+    context={'receipes:',queryset}
+    return render(request,'receips.html',context)
